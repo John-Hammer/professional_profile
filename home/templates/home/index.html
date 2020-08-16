@@ -1,2 +1,309 @@
 {% extends "base.html" %}
 {% load static %}
+
+{% block page_header %}
+
+{% endblock %}
+
+{% block content %}
+    <!-- Masthead-->
+        <header class="masthead">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">John Hammer</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">My online professional profile </h2>
+                    <a class="btn btn-primary js-scroll-trigger" href="#projects">Get Started</a>
+                </div>
+            </div>
+        </header>
+        <!-- Projects-->
+        <section class="project-section resume-section" id="projects">
+            <div class="container">
+                <!-- Project 1-->
+                <div class="row justify-content-center no-gutters mb-2 mb-lg-0">
+                    <div class="col-lg-6"><a href="https://jh-boutique-ado.herokuapp.com/" target="_blank"><img class="img-fluid" src="{{ MEDIA_URL }}boutique_ado.jpg" alt="Boutique Ado" /></a></div>
+                    <div class="col-lg-6">
+                        <div class="text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Boutique Ado</h4>
+                                    <p class="mb-1"><a target="_blank" href="https://jh-boutique-ado.herokuapp.com/"><i class="fas fa-link fa-lg"></i></a>
+                                    <a target="_blank" href="https://github.com/John-Hammer/boutique_ado_v1"><i class="fab fa-github fa-lg"></i></a>
+                                    </p>
+                                    <p class="mb-0 text-white-50">
+                                        The final course from Code Institute instructed us in the creation of a Django Web Store, utilizing PostgreSQL, Heroku, AWS S3, and Stripe 
+                                        to process payments. You can create Accounts, remember sale history, sort products by a veriety of means, an admin can add, remove and edit products.
+                                        <br>Admin Login Details:
+                                        <br>Username: Admin
+                                        <br>Password: Ph4nd0n5 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2-->
+                <div class="row justify-content-center no-gutters mb-2 mb-lg-0">
+                    <div class="col-lg-6"><a href="https://jh-tutor-station.herokuapp.com/" target="_blank"><img class="img-fluid" src="{{ MEDIA_URL }}tutor_station.jpg" alt="Tutor Station" /></a></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Tutor Station</h4>
+                                    <p class="mb-1"><a target="_blank" href="https://jh-tutor-station.herokuapp.com/"><i class="fas fa-link fa-lg"></i></a>
+                                    <a target="_blank" href="https://github.com/John-Hammer/tutor_station"><i class="fab fa-github fa-lg"></i></a>
+                                    </p>
+                                    <p class="mb-0 text-white-50">
+                                        The Final Project in code institute, this was an attempt to make a tutor renting website for Sweden. This was a concept and has much the same functionality as Boutique Ado.
+                                        <br>Admin Login Details:
+                                        <br>Username: Admin
+                                        <br>Password: Ph4nd0n5 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3-->
+                <div class="row justify-content-center no-gutters mb-2 mb-lg-0">
+                    <div class="col-lg-6"><a href="https://therecipe-project3.herokuapp.com/" target="_blank"><img class="img-fluid" src="{{ MEDIA_URL }}the_recipe.jpg" alt="The Recipe" /></a></div>
+                    <div class="col-lg-6">
+                        <div class="text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">The Recipe</h4>
+                                    <p class="mb-1"><a target="_blank" href="https://therecipe-project3.herokuapp.com/"><i class="fas fa-link fa-lg"></i></a>
+                                    <a target="_blank" href="https://github.com/John-Hammer/Project3"><i class="fab fa-github fa-lg"></i></a>
+                                    </p>
+                                    <p class="mb-0 text-white-50">
+                                        One of my Projects for Code Institute, this was a simple flask recipe project that utilized mongoDB as a recipe database. Feel free to add a recipe(s).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Resume-->
+        <section class="resume-section bg-light" id="experience">
+            <div class="container">
+            <!-- Skills-->
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5 d-flex">
+                    <div class="col-xl-6 col-lg-7 text-center"><img class="img-fluid mb-3 mb-lg-0" src="{{ MEDIA_URL }}skill_tree.jpg" alt="" /></div>
+                    <div class="col-xl-6 col-lg-5 order-lg-first">
+                        <div class="featured-text-right text-center text-lg-left mr-45 pr-2">
+                            <h4>Skills</h4>
+                            <ul class="text-black-50 mb-0 list-group">
+                                <li class="list-group-item">Javascript - version 1.8.5
+                                    <ul class="text-black-50 mb-0">
+                                        <li>Google Apps Script - V8</li>
+                                    </ul>
+                                </li>
+                                <li class="list-group-item">Python - version 3.8.3
+                                    <ul class="text-black-50 mb-0">
+                                        <li>Django - version 3.1</li>
+                                        <li>Flask - version 1.1.2</li>
+                                    </ul>
+                                </li>
+                                <li class="list-group-item">CSS3
+                                    <ul class="text-black-50 mb-0">
+                                        <li>Bootstrap - version 4.5</li>
+                                    </ul>
+                                </li>
+                                <li class="list-group-item">HTML5</li>
+                                <li class="list-group-item">SQL - version 15
+                                    <ul class="text-black-50 mb-0">
+                                        <li>PostgreSQL - version 9.6</li>
+                                        <li>mySQL - version 8.0</li>
+                                    </ul>
+                                </li>
+                                <li class="list-group-item">noSQL
+                                    <ul class="text-black-50 mb-0">
+                                        <li>MongoDB - version 9.6</li>
+                                    </ul>
+                                </li>
+                                <li class="list-group-item">AutoCad - version 22.0
+                                    <ul class="text-black-50 mb-0">
+                                        <li>Permit Drawings for British Columbia and Alberta municiplaties</li>
+                                        <li>Construction Drawings for Telus Communications Inc</li>
+                                    </ul>
+                                </li>
+                                <li class="list-group-item">Fibre and copper infrastructure design
+                                    <ul class="text-black-50 mb-0">
+                                        <li>Designs for British Columbia and Alberta</li>
+                                    </ul>
+                                </li>
+                                <li class="list-group-item">G Suite</li>
+                                <li class="list-group-item">Windows Office Suite</li>
+                            </ul>
+                            <p class="text-black-50 mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+            <!-- Education-->
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-6 col-lg-7 text-center"><img class="img-fluid mb-3 mb-lg-0" src="{{ MEDIA_URL }}education.jpg" alt="" /></div>
+                    <div class="col-xl-6 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Education</h4>
+                            <ul class="text-black-50 mb-0 list-group">
+                                <li class="list-group-item">Diploma of Software Development
+                                    <br>Code Institute, Sweden
+                                    <br>2020
+                                </li>
+                                <li class="list-group-item">Certificate of Completion
+                                    <br>TELUS Outside Plant Engineering, Vancouver, Canada
+                                    <br>2013
+                                </li>
+                                <li class="list-group-item">Diploma of Technical Studies
+                                    <br>BCIT, Vancouver, Canada
+                                    <br>2013
+                                </li>
+                                <li class="list-group-item">Certificate of Technical Studies
+                                    <br>BCIT, Vancouver, Canada
+                                    <br>2012
+                                </li>
+                                <li class="list-group-item">High School Diploma
+                                    <br>Gleneagle Secondary School, Coquitlam, Canada
+                                    <br>2002
+                                </li>
+                            </ul>
+                            <p class="text-black-50 mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Job 1-->
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                    <div class="col-lg-6 bg-black text-center pt-5"><img class="img-fluid pt-5" src="{{ MEDIA_URL }}Alvsjo.jpg" alt="" /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">IT REPRESENTATIVE</h4>
+                                    <p class="mb-0 text-white-50">
+                                        International Engelska Skolan
+                                        <br>Älvsjö, Sweden
+                                        <br>2018 – Present
+                                        </p>
+                                    <ul class="text-white-50 mb-0 tab">
+                                        <li>Management of all student and staff PCs and Chromebooks</li>
+                                        <li>Created passive inventory system by merging automated network CSV reports with manually maintained invetory on google sheets to create a real time tracking system for all school devices.</li>
+                                        <li>Managed inventory by linking google sheets with the Google Admin SDK API to enable control of the devices via the Google Sheet.</li>
+                                        <li>Created a Google Apps Script system using Google Forms, Sheets, and Chat to automate a quick response for teachers who need emergency help with students.</li>
+                                        <li>Day to day assistance with all technical problems across the school.</li>
+                                    </ul>
+                                    <hr class="d-none d-lg-block mb-0 mc-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Job 2-->
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                    <div class="col-lg-6 bg-black text-center pt-5"><img class="img-fluid pt-5" src="{{ MEDIA_URL }}pole1.jpg" alt="" /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">OUTSIDE PLANT TECHNICIAN</h4>
+                                    <p class="mb-0 text-white-50">
+                                        Encepta Corp
+                                        <br>Burnaby, British Columbia, Canada
+                                        <br>2015 – 2017
+                                    </p>
+                                    <ul class="text-white-50 mb-0 tab">
+                                        <li>Outside plant design - designing and permitting infrastructure to provide fibre or copper connectivity to clients.</li>
+                                        <li>Liaised with technicians, permit authorities, contractors, customers and Telco companies.</li>
+                                        <li>Responsible for the creation of permit and construction drawings using AutoCad.</li>
+                                        <li>Part of a management team responsible over multiple projects in various parts of Canada.</li>
+                                        <li>Premises data collection - gathering information for the creation of an fibre distribution plan. This information is also used to determine sales targets.</li>
+                                        <li>Our team pioneered the use of tablets to collect field data, allowing us to create more dynamic, expansive, and accurate data sets. In comparison the competition in the region had been using pen and paper then manually inputting that data into spreadsheets.</li>
+                                    </ul>
+                                    <hr class="d-none d-lg-block mb-0 mc-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Job 3-->
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                    <div class="col-lg-6 bg-black text-center pt-5"><img class="img-fluid pt-5" src="{{ MEDIA_URL }}FDH.jpg" alt="" /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">OUTSIDE PLANT TECHNICIAN</h4>
+                                    <p class="mb-0 text-white-50">
+                                        GPG Technical Services 
+                                        <br>Burnaby, British Columbia, Canada
+                                        <br>2013 – 2015
+                                    </p>
+                                    <ul class="text-white-50 mb-0 tab">
+                                        <li>Design of telecommunications networks in Canada for telecom companies.</li>
+                                        <li>Responsible for the creation of permit and construction drawings using MicroStation and AutoCad.</li>
+                                        <li>Utilized internal programs to order materials, calculate labor costs, and create billing letters.</li>
+                                        <li>Liaised with technicians, permit authorities, and contractors.</li>
+                                        <li>Developed Fibre networks for TELUS Mobility Small Cell sites utilizing Coarse Wave Division Multiplexing (CWDM).</li>
+                                        <li>Design and management of two GPON Projects in British Columbia, each serving over 400 customers.</li>
+                                    </ul>
+                                    <hr class="d-none d-lg-block mb-0 mc-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Job 4-->
+                <div class="row justify-content-center no-gutters">
+                    <div class="col-lg-6 bg-black text-center"><img class="img-fluid" src="{{ MEDIA_URL }}pole2.jpg" alt="" /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-lg-left">
+                                    <h4 class="text-white">OUTSIDE PLANT TECHNICIAN</h4>
+                                    <p class="mb-0 text-white-50">
+                                        Dixon Networks
+                                        <br>Delta, British Columbia, Canada
+                                        <br>2013
+                                    </p>
+                                    <ul class="text-white-50 mb-0 tab">
+                                        <li>Intensive onsite pole line design in British Columbia, Canada.</li>
+                                        <li>Performed field surveys to determine measurements and field conditions.</li>
+                                    </ul>
+                                    <hr class="d-none d-lg-block mb-0 mc-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-->
+        <section class="resume-section about-section" id="about">
+            <div class="container">
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                    <div class="col-lg-6 bg-black"><img class="img-fluid" src="{{ MEDIA_URL }}john1.jpg" alt="" /></div>
+                    <div class="col-lg-6">
+                        <div class="text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">ABOUT ME</h4>
+                                    <p class="mb-2 text-white-50">
+                                        Hello,<br><br>I born in raised in and around Vancouver, Canada where I had made a career in IT infrastructure design. I moved to Sweden 
+                                        to be with my then girlfriend (now wife) in January 2018 and we now have son born Dec 17, 2019 named Johann. She is a teacher with International Engelska 
+                                        Skolan (IES), and I soon become an IT Representative with that organization. IES had made the decision to become a Google organization, and that started 
+                                        my coding journey when I attempted to learn Google Apps Script (which is a Javascript based language) to solve organizational problems at the school. To 
+                                        attempt to upskill I enrolled with Code Institute which culminated with a Django unit which I found to be a very satisfying framework.
+                                    </p>
+                                    <p class="mb-1">
+                                        <a target="_blank" href="https://github.com/John-Hammer/"><i class="fab fa-github fa-3x"></i></a>
+                                        <a target="_blank" href="https://www.linkedin.com/in/john-william-hammer/"><i class="fab fa-linkedin fa-3x"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock %}
