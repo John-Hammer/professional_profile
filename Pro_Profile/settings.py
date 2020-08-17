@@ -87,7 +87,7 @@ CLOUDINARY_STORAGE = {
     'CLOUD_NAME': os.environ.get('CLOUD_NAME', ''),
     'API_KEY': os.environ.get('API_KEY', ''),
     'API_SECRET': os.environ.get('API_SECRET', ''),
-    'STATICFILES_MANIFEST_ROOT': os.path.join(BASE_DIR, 'my-manifest-directory')
+    #'STATICFILES_MANIFEST_ROOT': os.path.join(BASE_DIR, 'my-manifest-directory')
 }
 
 # Password validation
